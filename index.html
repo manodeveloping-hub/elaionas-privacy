@@ -1,0 +1,250 @@
+<title>Απόρρητο Ελαιώνα</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gilda+Display&family=Noto+Sans:wght@400;600;700&display=swap">
+<style>
+  :root {
+    --ground: #F2F3EE;
+    --sheet: #FFFFFF;
+    --ink: #16211A;
+    --ink-soft: #4E5C53;
+    --rule: #D8DED2;
+    --olive: #55743F;
+    --oil: #A87310;
+    --band: #EAEEE3;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #12160F;
+      --sheet: #1A1F17;
+      --ink: #E8EDE2;
+      --ink-soft: #A3AF9C;
+      --rule: #2E3728;
+      --olive: #9CBE82;
+      --oil: #D9A64A;
+      --band: #222A1C;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground: #12160F;
+    --sheet: #1A1F17;
+    --ink: #E8EDE2;
+    --ink-soft: #A3AF9C;
+    --rule: #2E3728;
+    --olive: #9CBE82;
+    --oil: #D9A64A;
+    --band: #222A1C;
+  }
+
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: 'Noto Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    padding: 0 16px;
+  }
+  .wrap { max-width: 44rem; margin: 0 auto; padding-block: 40px 72px; }
+
+  header.mast {
+    border-bottom: 2px solid var(--olive);
+    padding-bottom: 20px;
+    margin-bottom: 8px;
+  }
+  .brand {
+    display: flex; align-items: baseline; gap: 10px;
+    font-size: 13px; letter-spacing: .14em; text-transform: uppercase;
+    color: var(--ink-soft); font-weight: 600;
+  }
+  .brand .dot { color: var(--oil); letter-spacing: 0; }
+  h1 {
+    font-family: 'Gilda Display', Georgia, serif;
+    font-weight: 400;
+    font-size: clamp(2rem, 6vw, 2.9rem);
+    line-height: 1.12;
+    margin: 14px 0 10px;
+    text-wrap: balance;
+  }
+  .stamp { font-size: 14px; color: var(--ink-soft); }
+
+  .lede {
+    font-size: 1.1rem;
+    color: var(--ink);
+    margin: 28px 0 0;
+    padding-left: 18px;
+    border-left: 3px solid var(--oil);
+  }
+
+  h2 {
+    font-family: 'Gilda Display', Georgia, serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin: 44px 0 4px;
+    padding-top: 22px;
+    border-top: 1px solid var(--rule);
+    text-wrap: balance;
+  }
+  h2 .n {
+    display: block;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 12px; font-weight: 700; letter-spacing: .16em;
+    color: var(--oil); text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+  p { margin: 14px 0; }
+  a { color: var(--olive); }
+
+  dl.rows { margin: 18px 0 0; }
+  dl.rows > div {
+    display: grid;
+    grid-template-columns: 11rem 1fr;
+    gap: 4px 20px;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  dl.rows dt { font-weight: 700; color: var(--ink); }
+  dl.rows dd { margin: 0; color: var(--ink-soft); }
+  @media (max-width: 560px) {
+    dl.rows > div { grid-template-columns: 1fr; }
+  }
+
+  ul.plain { margin: 14px 0; padding-left: 1.15em; }
+  ul.plain li { margin: 8px 0; }
+
+  .never {
+    background: var(--band);
+    border-radius: 2px;
+    padding: 20px 22px;
+    margin: 20px 0 0;
+  }
+  .never ul { margin: 0; padding-left: 1.1em; }
+  .never li { margin: 7px 0; font-weight: 600; }
+
+  footer {
+    margin-top: 52px;
+    padding-top: 22px;
+    border-top: 2px solid var(--olive);
+    font-size: 14px;
+    color: var(--ink-soft);
+  }
+  footer .mail { font-size: 17px; font-weight: 700; color: var(--olive); }
+</style>
+
+<div class="wrap">
+  <header class="mast">
+    <div class="brand">Ελαιώνας <span class="dot">🫒</span> εφαρμογή ελαιοπαραγωγού</div>
+    <h1>Πολιτική απορρήτου</h1>
+    <div class="stamp">Ισχύει από 25 Σεπτεμβρίου 2026 &nbsp;·&nbsp; com.elaionas.app</div>
+  </header>
+
+  <p class="lede">
+    Ο Ελαιώνας είναι το ημερολόγιο του ελαιώνα σου: χωράφια, συγκομιδή, άλεση,
+    πότισμα, έσοδα και έξοδα. Ό,τι γράφεις αποθηκεύεται πρώτα στο ίδιο σου το
+    κινητό και δουλεύει χωρίς σήμα. Χωρίς λογαριασμό, τίποτα δεν φεύγει από εκεί.
+  </p>
+
+  <h2><span class="n">Ένα</span>Τι δεδομένα κρατάμε</h2>
+  <dl class="rows">
+    <div>
+      <dt>Οι εγγραφές σου</dt>
+      <dd>Χωράφια, συγκομιδές, αλέσεις, ποτίσματα, εργασίες, διαθέσεις λαδιού,
+          έσοδα, έξοδα, σημειώσεις.</dd>
+    </div>
+    <div>
+      <dt>Θέση χωραφιών</dt>
+      <dd>Συντεταγμένες και, προαιρετικά, η περίμετρος — μόνο όταν τις καταγράφεις
+          εσύ ή βάζεις πινέζα στον χάρτη. Η εφαρμογή δεν παρακολουθεί πού βρίσκεσαι
+          και δεν καταγράφει θέση στο παρασκήνιο.</dd>
+    </div>
+    <div>
+      <dt>Φωτογραφίες και ήχος</dt>
+      <dd>Μόνο όσες τραβάς ή ηχογραφείς μέσα στην εφαρμογή, για να θυμάσαι τι είδες
+          στο χωράφι.</dd>
+    </div>
+    <div>
+      <dt>Λογαριασμός</dt>
+      <dd>Αν συνδεθείς με Google: η διεύθυνση email και ένα αναγνωριστικό λογαριασμού.
+          Τίποτε άλλο — ούτε επαφές, ούτε ημερολόγιο, ούτε αρχεία.</dd>
+    </div>
+  </dl>
+
+  <h2><span class="n">Δύο</span>Γιατί τα κρατάμε</h2>
+  <p>
+    Για να λειτουργεί η εφαρμογή· για να υπάρχει αντίγραφο ασφαλείας ώστε να μη
+    χαθεί η δουλειά μιας χρονιάς αν χαθεί το κινητό· και για να βλέπει η οικογένειά
+    σου τα ίδια χωράφια, αν τη βάλεις εσύ με κωδικό πρόσκλησης.
+  </p>
+  <p>
+    Νομική βάση: η εκτέλεση της υπηρεσίας που ζήτησες, και η συγκατάθεσή σου για
+    τον λογαριασμό και τον συγχρονισμό — που ανακαλείται όποτε θέλεις, με
+    αποσύνδεση ή διαγραφή λογαριασμού.
+  </p>
+
+  <h2><span class="n">Τρία</span>Πού φυλάγονται</h2>
+  <ul class="plain">
+    <li><strong>Στο κινητό σου</strong>, πάντα. Εκεί είναι το πρωτότυπο.</li>
+    <li><strong>Στη Supabase</strong> (διακομιστές εντός Ευρωπαϊκής Ένωσης), μόνο αν
+        έχεις συνδεθεί με λογαριασμό.</li>
+    <li><strong>Open-Meteo</strong>, για την πρόγνωση καιρού: της στέλνονται μόνο
+        συντεταγμένες, στρογγυλεμένες, χωρίς κανένα στοιχείο για το ποιος είσαι.</li>
+    <li><strong>Google</strong>, μόνο κατά τη σύνδεση, για να επιβεβαιώσει ότι ο
+        λογαριασμός είναι δικός σου.</li>
+  </ul>
+
+  <h2><span class="n">Τέσσερα</span>Τι δεν κάνουμε ποτέ</h2>
+  <div class="never">
+    <ul>
+      <li>Δεν πουλάμε τα δεδομένα σου.</li>
+      <li>Δεν τα μοιραζόμαστε με τρίτους για διαφήμιση ή ανάλυση.</li>
+      <li>Δεν υπάρχουν διαφημίσεις μέσα στην εφαρμογή.</li>
+      <li>Δεν υπάρχουν ιχνηλάτες τρίτων.</li>
+      <li>Δεν παρακολουθούμε τη θέση σου στο παρασκήνιο.</li>
+    </ul>
+  </div>
+
+  <h2><span class="n">Πέντε</span>Πόσο μένουν</h2>
+  <p>
+    Όσο έχεις λογαριασμό. Μια χρονιά ελαιοπαραγωγής κρίνεται σε σχέση με τις
+    προηγούμενες, γι' αυτό τα παλιά δεδομένα δεν σβήνονται μόνα τους: τα σβήνεις
+    εσύ. Αν διαγράψεις τον λογαριασμό, ό,τι έχει ανέβει σβήνεται οριστικά μέσα σε
+    τριάντα ημέρες.
+  </p>
+
+  <h2><span class="n">Έξι</span>Τα δικαιώματά σου</h2>
+  <dl class="rows">
+    <div>
+      <dt>Αντίγραφο</dt>
+      <dd>Εξαγωγή όλων σε αρχείο Excel, μέσα από την εφαρμογή. Δουλεύει πάντα, ακόμη
+          και χωρίς ενεργή συνδρομή — τα δεδομένα σου δεν γίνονται μοχλός πίεσης.</dd>
+    </div>
+    <div>
+      <dt>Διόρθωση</dt>
+      <dd>Κάθε εγγραφή αλλάζει ή σβήνεται από την ίδια οθόνη που φτιάχτηκε.</dd>
+    </div>
+    <div>
+      <dt>Διαγραφή</dt>
+      <dd>Ρυθμίσεις → «Διαγραφή δεδομένων από το κινητό» για τα τοπικά, και
+          «Διαγραφή λογαριασμού» για όσα έχουν ανέβει.</dd>
+    </div>
+    <div>
+      <dt>Καταγγελία</dt>
+      <dd>Αρχή Προστασίας Δεδομένων Προσωπικού Χαρακτήρα, <a href="https://www.dpa.gr">dpa.gr</a>.</dd>
+    </div>
+  </dl>
+
+  <h2><span class="n">Επτά</span>Παιδιά</h2>
+  <p>
+    Η εφαρμογή απευθύνεται σε ελαιοπαραγωγούς και δεν προορίζεται για παιδιά κάτω
+    των 16 ετών. Δεν συλλέγουμε εν γνώσει μας δεδομένα παιδιών.
+  </p>
+
+  <h2><span class="n">Οκτώ</span>Αλλαγές</h2>
+  <p>
+    Αν αλλάξει κάτι ουσιαστικό, η ημερομηνία στην κορυφή αλλάζει και η νέα έκδοση
+    δημοσιεύεται εδώ πριν ισχύσει.
+  </p>
+
+  <footer>
+    <p>Ερωτήσεις, αιτήματα διαγραφής, οτιδήποτε:</p>
+    <p class="mail"><a href="mailto:manodeveloping@gmail.com">manodeveloping@gmail.com</a></p>
+    <p>Ελαιώνας · εφαρμογή για τον Έλληνα ελαιοπαραγωγό</p>
+  </footer>
+</div>
